@@ -1,0 +1,62 @@
+
+AUTOPULSE DEMONSTRATION ENGINEERING MANUAL
+Document ID: DEMO-EV-001
+Revision: 1.0
+Status: Synthetic training material only
+
+SECTION 1: BATTERY TEMPERATURE
+
+Battery temperature readings represent the temperature
+reported by the simulated battery monitoring system.
+
+For this demonstration, a reading above 45 C is an
+investigation flag. This is an invented project rule,
+not an OEM safety limit.
+
+When the flag appears:
+1. Check whether the reading persists across samples.
+2. Review the associated diagnostic trouble code.
+3. Inspect available cooling-system telemetry.
+4. Compare readings against approved vehicle-specific
+   service documentation before recommending action.
+
+SECTION 2: MOTOR TEMPERATURE
+
+For this demonstration, a motor temperature above 90 C
+is an investigation flag. This threshold is invented.
+
+When the flag appears:
+1. Review the temperature trend.
+2. Check for the MOTOR_TEMP_HIGH diagnostic code.
+3. Review relevant cooling and operating information.
+4. Refer the issue to a qualified technician for
+   vehicle-specific assessment.
+
+SECTION 3: DIAGNOSTIC TROUBLE CODES
+
+BATT_TEMP_HIGH:
+Synthetic code indicating a battery temperature
+investigation flag in this dataset.
+
+MOTOR_TEMP_HIGH:
+Synthetic code indicating a motor temperature
+investigation flag in this dataset.
+
+NONE:
+No diagnostic trouble code is recorded for this sample.
+This does not guarantee that the vehicle is fault-free.
+
+SECTION 4: DIAGNOSTIC REPORTING
+
+An investigation report should include:
+- Vehicle identifier
+- Observed telemetry
+- Associated diagnostic codes
+- Relevant manual passages
+- Possible explanations, clearly labelled as hypotheses
+- Recommended verification steps
+- Uncertainties and missing information
+
+Do not claim a confirmed root cause from a single reading.
+Do not treat this synthetic manual as an actual service manual.
+Do not issue vehicle-control commands or authorize repairs.
